@@ -1,0 +1,10 @@
+Github workflow failure log
+Repositorio: davidibanezibanez/example-failing-workflows
+Workflow: Fail Workflow 4
+Job: intentional-fail-job-4_1
+Step que falló: 2025-06-23T04:06:59.5170977Z Run echo "This is Job 2"
+Run ID: 15814985795
+Job ID: 44572169299
+Fecha de análisis: 2025-06-23 00:07:55
+Mensaje(s) de error detectado(s):
+2025-06-23T04:06:59.5763773Z ##[error]Process completed with exit code 1.

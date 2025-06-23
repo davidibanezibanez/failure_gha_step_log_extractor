@@ -1,0 +1,5 @@
+OWNER = "davidibanezibanez"
+REPO = "example-failing-workflows"
+
+OWNER = "vercel"
+REPO = "next.js"
