@@ -2,3 +2,4 @@
 __pycache__/
 *.pyc
 env/
+github_failure_logs/
