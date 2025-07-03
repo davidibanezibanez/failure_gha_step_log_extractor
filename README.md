@@ -59,4 +59,4 @@ No existe un JSON único original desde la API de GitHub, que contenga tanto el 
 
 No, debido a que es posible extraer hasta un máximo de 1000 workflow runs por repo con API normal de GitHub. Además el programa tiene un límite de 90 días pasados desde la ejecución, debido a que GitHub no almacena logs de más de 90 días.
 
-Fuente máximo 1000 workflow runs: https://docs.github.com/en/rest/actions/workflow-runs?apiVersion=2022-11-28.
+Fuente (máximo 1000 workflow runs): https://docs.github.com/en/rest/actions/workflow-runs?apiVersion=2022-11-28.
