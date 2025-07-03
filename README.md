@@ -6,17 +6,17 @@
 
 # Flujo del programa
 
-1. El programa analiza un repo.
+1. El programa analiza un repositorio.
 2. Encuentra los workflow runs fallidos (conclusion == 'failure').
-3. Por cada workflow run fallido, guarda workflow_run.json, jobs.json y archivo .yml.
-4. Luego por cada job que falló en ese workflow guarda el json con la metadata del job específico y su archivo de log en .txt (Jobs con "conclusion == 'failure'").
+3. Por cada workflow run fallido, guarda workflow_run.json, jobs.json y archivo YAML.
+4. Luego por cada job que falló en ese workflow guarda el JSON con la metadata del job específico y su archivo de log en formato .txt (jobs con "conclusion == 'failure'").
 5. Luego, por cada job que falló, guarda los logs de los steps fallidos de ese job.
 
 # Información adicional
 
-## Seguimiento de los steps en json y log
+## Seguimiento de los steps en JSON y log
 
-Los steps no poseen id en la metadata json, el identificador más próximo es name, sin embargo algunos step no poseen name definido y GitHub les asigna un name en la metadata de acuerdo al comando que ejecutan. En cualquier caso, tengan nombre definido o no en el yaml, en el log el identificar que aparecerá al inicio del step es un nombre asignado de acuerdo al comando que ejecutan. 
+Los steps no poseen ID en la metadata JSON, el identificador más próximo es 'name', sin embargo, algunos steps no poseen 'name' definido y GitHub les asigna un 'name' en la metadata de acuerdo al comando que ejecutan. En cualquier caso, tengan nombre definido o no en el YAML, en el log el identificador que aparecerá al inicio del step es un nombre asignado de acuerdo al comando que ejecutan.
 
 Por ejemplo para el siguiente step:
 
@@ -49,7 +49,7 @@ Su identificador en la primera línea del log es:
 2025-07-03T00:15:21.1416628Z ##[group]Run node scripts/automated-update-workflow.js
 ```
 
-Para este caso, si en el archivo yaml no tuviera un name definido, entonces en la metadata json su name simplemente sería "Run node scripts/automated-update-workflow.js".
+Para este caso, si en el archivo YAML no tuviera un 'name' definido, entonces en la metadata JSON su 'name' simplemente sería "Run node scripts/automated-update-workflow.js".
 
 ## ¿Existe un JSON que contenga workflow run y jobs, ambos compilados en un solo JSON de manera original desde la API?
 
